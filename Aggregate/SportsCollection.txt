@@ -39,7 +39,7 @@ db.sports.insertMany([
 db.sports.aggregate([
   {
     $group: {
-      _id: "sport_id",
+      _id: null,
       average_popularity: { $avg: "$popularity_rating" }
     }
   }
